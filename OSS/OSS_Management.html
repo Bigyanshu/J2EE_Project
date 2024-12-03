@@ -1,0 +1,45 @@
+<html>
+	<head>
+		<title>Menu Page</title>
+		<script language="javascript">
+			function Hilight(id)
+			{
+				cid=document.getElementById(id);
+				cid.style.backgroundColor="red";
+			}
+			function Normal(id)
+			{
+				cid=document.getElementById(id);
+				cid.style.backgroundColor="white ";
+			}
+		</script>
+	</head>
+	<body>
+		<table width="390">
+			<tr height="26" style="border-radius:7px" >
+				<td width="200" nowrap="nowrap" id="id1" bgcolor="white " onmouseover="Hilight('id1')" 
+					onmouseout="Normal('id1')" style="border-radius:5px">
+					<a href="OSS_PurGoodsC.jsp" target="_blank" style="text-decoration:none"><font face="Cascadia Code" color="🖤 " size="2">Purchase of Goods</font></a>
+				</td> 
+			</tr>
+			<tr height="26">
+				<td width="180" nowrap="nowrap" id="id2" bgcolor="white " onmouseover="Hilight('id2')" 
+					onmouseout="Normal('id2')" style="border-radius:5px">
+					<a href="OSS_IssueGoodsC.jsp" target="_blank" style="text-decoration:none"><font face="Cascadia Code" color="🖤 " size="2">Issue of Goods</font></a>
+				</td> 
+			</tr>
+			<tr height="26" >
+				<td width="180" nowrap="nowrap" id="id3" bgcolor="white " onmouseover="Hilight('id3')" 
+					onmouseout="Normal('id3')" style="border-radius:5px">
+					<a href="OSS_PmtVouC.jsp" target="_blank" style="text-decoration:none"><font face="Cascadia Code" color="🖤 " size="2">Payment Voucher</font></a>
+				</td> 
+			</tr>
+			<tr height="26">
+				<td width="180" nowrap="nowrap" id="id4" bgcolor="white " onmouseover="Hilight('id4')" 
+					onmouseout="Normal('id4')" style="border-radius:5px">
+					<a href="OSS_ReceiptVouC.jsp" target="_blank" style="text-decoration:none"><font face="Cascadia Code" color="🖤 " size="2">Receipt Voucher</font></a>
+				</td> 
+			</tr>
+		</table>
+	</body>
+</html>

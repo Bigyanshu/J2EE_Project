@@ -1,0 +1,216 @@
+<html>
+<head><title>OSS Menu</title>
+	<script language="javascript">
+		var imgs=new Array();
+		imgs[0]="1.jpg";
+		imgs[1]="24Service.jpg";
+		imgs[2]="Apple.jpg";
+		imgs[3]="MRF.jpg";
+		imgs[4]="Open.avif";
+		imgs[5]="OSS.jpg";
+		imgs[6]="weOpen.avif";
+		imgs[7]="ShopOpen.avif";
+		var i;
+		i=0;
+		function slideshow()
+		{
+			document.f1.imgname.src=imgs[i];
+			i=i+1;
+			if(i>7)
+				i=0;
+			setTimeout("slideshow()",3000);
+		}
+	</script>
+	<script language="javascript">
+		function Highlight(cid)
+		{
+			tdid=document.getElementById(cid);
+			tdid.style.cursor="pointer";
+			tdid.style.backgroundColor="black";
+		}
+		function Normal(cid)
+		{
+			tdid=document.getElementById(cid);
+			tdid.style.backgroundColor="red";
+		}
+		function Highlight2(cid)
+		{
+			tdid=document.getElementById(cid);
+			tdid.style.cursor="pointer";
+			tdid.style.backgroundColor="white";
+		}
+		function Normal2(cid)
+		{
+			tdid2=document.getElementById(cid);
+			tdid2.style.backgroundColor="lightgreen";
+		}
+	</script>
+	<script language="javascript">
+		function showAbout(cid)
+		{
+			cid=document.getElementById(cid);
+			cid.src="OSS_About.html";
+		}
+		function showReachUS(cid)
+		{
+			cid=document.getElementById(cid);
+			cid.src="OSS_ReachUS.html";
+		}
+		function showMaster(cid)
+		{
+			ifid=document.getElementById(cid);
+			ifid.src="OSS_Master.html";
+		}
+		function showMgmt(cid)
+		{
+			ifid=document.getElementById(cid);
+			ifid.src="OSS_Management.html";
+		}
+		function showSummary(cid)
+		{
+			ifid=document.getElementById(cid);
+			ifid.src="OSS_Summary.html";
+		}
+		function showDetail(cid)
+		{
+			ifid=document.getElementById(cid);
+			ifid.src="OSS_DetailS.html";
+		}
+		function showLogout(cid)
+		{
+			tdid=document.getElementById(cid);
+			tdid.src="OSS_Logout.html";
+		}
+		function showTime()
+		{
+			var dt=new Date();
+			hr=dt.getHours();
+			mn=dt.getMinutes();
+			sc=dt.getSeconds();
+			if(mn>60)
+				hr=hr+1;
+			else if(sc>60)
+				mn=mn+1;
+			tm=hr+":"+mn+":"+sc;
+			document.f1.txtCtm.value=tm;
+			setTimeout("showTime()",1000);
+		}
+		function showDate()
+		{
+			var dt=new Date();
+			dd=dt.getDate();
+			mm=dt.getMonth()+1;
+			yy=dt.getFullYear();
+			dt=dd+"/"+mm+"/"+yy;
+			document.f1.txtCdt.value=dt;
+		} 
+	</script>
+	</head>
+	<body onload="showTime(),showDate(),slideshow()" bgcolor="black" style="background-size:cover">
+		<table width="100%" border="0" >
+			<tr>
+				<td bgcolor="shadding" style="border-radius:80px" width="10%" align="center">
+					<font size="5" face="Cascadia Code" color="black">One Stop Shop</font><br><font size="3" color="red">OSS</font>
+				</td>
+				<td bgcolor="white" style="border-radius:70px" width="80%" align="center"><br>
+					<font face="copperplate gothic" size="4" color="red"><b>One Stop Shop Super Mart<br></font><br>
+					<font face="Cascadia Code" size="4" color="gren"><b>Madhupatna</b></font><br>
+					<font face="Cascadia Code" size="4" color="gren"><b>Cuttack-753010</b></font><br>
+					<font face="Cascadia Code" size="4" color="gren"><b>Odisha</b></font><br>
+				</td>
+				<td bgcolor="shadding" style="border-radius:80px" background="white" width="70%" align="center">
+					<img src="OSS.jpg" width="70" height="65">
+				</td>
+			</tr>
+		</table>
+		
+		<form name="f1">
+		
+		<table width="100%">
+			<tr>
+				<td width="100%" border="1" style="border-radius:20px">
+			</tr>
+		</table>
+		
+		<table width="100%" style="border-radius:20px" align="right">
+			<tr>
+				<td style="border-radius:40px" bgcolor="lavender">
+					<font face="copperplate gothic" color="black">
+					<b>Welcome To One Stop Shop</b></font></td>
+				<td colspan="8" style="border-radius:40px" bgcolor="bromide" align="right">
+					<font color="yellow"><marquee> Order Now <br>Order Now</marquee></font></td>
+				<td colspan="1" style="border-radius:10px" bgcolor="black" align="right">
+					<font color="mirror"><input type="text" name="txtCtm" size="6" style="border-radius:2" disabled >
+						<input type="text" name="txtCdt" size="6" disabled></font></td>
+			</tr>
+			
+			<tr height="40"  align="center" >
+				<td width="12%" id="id1" style="border-radius:40px" bgcolor="lightgreen"> 
+					<font color="blue" onMouseover="Highlight2('id1')" onMouseOut="Normal2('id1')" 
+					onClick="showAbout()">
+					<a href="OSS_About.html" target="_blank" style="text-decoration:none" >
+					<b>About Us</b></a></font></td>
+					
+				<td width="12%" id="id2" style="border-radius:40px" bgcolor="lightgreen"> 
+					<font color="blue" onMouseover="Highlight2('id2')" onMouseOut="Normal2('id2')">
+					<a href="OSS_Search.html" target="_blank" style="text-decoration:none">
+					<b>Search</b></font></a></td>
+					
+				<td width="12%" id="id3" style="border-radius:40px" bgcolor="lightgreen"> 
+					<font color="blue" onMouseover="Highlight2('id3')" onMouseOut="Normal2('id3')">
+					<a href="ReachUS.html" target="_blank" style="text-decoration:none">
+					<b>Reach Us</b></a></font></td>
+					
+					
+				<td width="12%" id="id4" style="border-radius:40px" bgcolor="red"> 
+					<font face="Cascadia Code" color="white"	onMouseover="Highlight('id4')" onMouseOut="Normal('id4')" 
+					Onclick="showMaster('subcontainer')"><b>Master</b></td>
+					
+				<td width="12%" id="id5" style="border-radius:40px" bgcolor="red"> 
+					<font face="Cascadia Code" color="white"	onMouseover	="Highlight('id5')" onMouseOut="Normal('id5')"
+					Onclick="showMgmt('subcontainer')"><b>Management</b></font></td>
+					
+				<td width="12%" id="id6" style="border-radius:40px" bgcolor="red"> 
+					<font face="Cascadia Code" color="white"	onMouseover="Highlight('id6')" onMouseOut="Normal('id6')" 
+					onclick="showSummary('subcontainer')"><b>Summary Report</b></font></td>
+					
+				<td width="12%" id="id7" style="border-radius:40px" bgcolor="red"> 
+					<font face="Cascadia Code" color="white"	onMouseover="Highlight('id7')" onMouseOut="Normal('id7')" placeholder="Details Report"
+					onclick="showDetail('subcontainer')" nowrap><b>Detail Report</b></font></td>
+					
+				<td width="12%" id="id8" style="border-radius:40px" bgcolor="lightgreen"> 
+					<font face="Cascadia Code" color="gren" onMouseover="Highlight2('id8')" onMouseOut="Normal2('id8')">
+					<a href="OSS_Help.html" target="_blank" style="text-decoration:none"><b>Help</b></a></font></td>
+					
+				<td width="10%" id="id9" style="border-radius:40px" bgcolor="black" 
+					<font color="red" onMouseover="Highlight2('id9')" onMouseOut="Normal('id9')">
+					<a href="OSS_Logout.html">
+					<img src="PowerW.avif" height="15" width="15" title="Logout"></font></a></b></td>
+			</tr>
+			
+			<tr  Height="300">
+				<td colspan="2" width="100%" border="1" background="white" valign="top" style="border-radius:20px">
+					<iframe src="" id="subcontainer" width="400" height="400" style="border:10px">
+					</iframe></td>
+				
+				<td colspan="8">
+					<img src="1.jpg" width="100%" height="500" border="1" bordercolor="black" 
+					style="border-radius:30px" name="imgname"></td>
+			</tr>
+		</table>
+		
+		<table width="100%" height="20" style="border-radius:60px" bgcolor="bromide">
+			<tr>
+				<br>
+				<td align="center">
+				<font face="Cascadia Code" color="lavender" size="3" >Designed & Developed By</font><font color="cyan" size="3" > : </font><b><font face="Copperplate Gothic" color="white" size="3" >Bigyanshu</font><font face="Copperplate Gothic" color="white" size="3" > Sekhar</font><font face="Copperplate Gothic" color="white" size="3" > Panda</font></b></td>
+			</tr>
+			
+			<tr height="60">
+				<td background="header.jpg" width="100%" align="right">
+				<font color="green"><b>&copy;One Stop Shop</b><br></td>
+			</tr>
+		</table>
+		</form>
+	</body>
+</html>

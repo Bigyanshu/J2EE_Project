@@ -1,0 +1,44 @@
+<html>
+<head>
+    <title>OSS Company Information</title>
+    <link rel="stylesheet" href="CSS_Universal.css">
+</head>
+<script language="javascript">
+	function goBack()
+		{
+		   window.location="OSS_Login.html";
+		}
+</script>
+<body>
+    <center>
+        <form name="f1" action="OSS_Login.html" method="post">
+            <nav>
+                <h2>Create User </h2>
+            </nav>
+            <table>
+                <tr>
+                    <td>User Name </td>
+                    <td>: <input type="text" name="txtUName" size="30" placeholder="Enter User Name"></td>
+                </tr>
+				<tr>
+                    <td>Password </td>
+                    <td>: <input type="text" name="txtPswd" size="30" placeholder="Enter Password"></td>
+                </tr>
+                <tr>
+                    <td>Password Hints </td>
+                    <td>: <input type="text" name="txtPHint" placeholder="Enter Hint of Password" ></td>
+                </tr>
+                <tr>
+                    <td>Answer </td>
+                    <td> :  <input type="text" name="txtAns"  placeholder="Enter Answer"></td>
+                </tr>
+            </table>
+            <br>
+            <input type="submit" name="btnCreate" value="Create"> &nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="reset" name="btnreset" value="Reset">
+            <input type="button" name="btnBack" value="Back" onclick="goBack()">
+			
+        </form>
+    </center>
+	</body>
+</html>

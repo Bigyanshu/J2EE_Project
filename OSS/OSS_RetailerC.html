@@ -1,0 +1,115 @@
+<html>
+<head>
+    <title>OSS Retailer Information</title>
+    <link rel="stylesheet" href="CSS_Universal.css">
+	<script language="javascript">
+		function showImage()
+		{
+		   var path,photo;
+		   path=document.f1.filePhoto.value;
+		   photo=path.substring(path.lastIndexOf("\\")+1);
+		   document.f1.imgPhoto.src=photo;
+		}
+	</script>
+</head>
+<body>
+    <center>
+        <form name="f1" action="OSS_RetailerS.jsp" method="post">
+            <nav>
+                <h2>Retailer Information</h2>
+            </nav>
+            <table>
+                <tr>
+                    <td>Retailer Code </td>
+                    <td>: <input type="text" name="txtRCode" size="30" placeholder="Enter Retailer Code"></td>
+                </tr>
+				<tr>
+                    <td>Retailer Name </td>
+                    <td>: <input type="text" name="txtRName" size="30" placeholder="Enter Retailer Name"></td>
+                    <td colspan="3" rowspan="3"> </td>
+                    <td><img src="" name="imgPhoto" style="max-width: 120px; height: 100px;" border="1"></td>
+                </tr>
+                <tr>
+                    <td>Contact Person </td>
+                    <td>: <input type="text" name="txtCPerson" placeholder="Enter Person Name" ></td>
+                </tr>
+                <tr>
+                    <td>Locality </td>
+                    <td> :  <input type="text" name="txtLoc"  placeholder="Enter Locality"></td>
+                </tr>
+                <tr>
+                    <td>City </td>
+                    <td>:   <input type="text" name="txtCity" placeholder="Enter City/District"></td>
+                </tr>
+                <tr>
+                    <td>State/U.Territory </td>
+                    <td>: 
+                        <select name="cmbState">
+                            <option value="--Select State--">--Select State--</option>
+                            <option value="Andhra Pradesh">Andhra Pradesh</option>
+                            <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                            <option value="Assam">Assam</option>
+                            <option value="Bihar">Bihar</option>
+                            <option value="Chhattisgarh">Chhattisgarh</option>
+                            <option value="Goa">Goa</option>
+                            <option value="Gujarat">Gujarat</option>
+                            <option value="Haryana">Haryana</option>
+                            <option value="Himachal Pradesh">Himachal Pradesh</option>
+                            <option value="Jharkhand">Jharkhand</option>
+                            <option value="Karnataka">Karnataka</option>
+                            <option value="Kerala">Kerala</option>
+                            <option value="Madhya Pradesh">Madhya Pradesh</option>
+                            <option value="Maharashtra">Maharashtra</option>
+                            <option value="Manipur">Manipur</option>
+                            <option value="Meghalaya">Meghalaya</option>
+                            <option value="Mizoram">Mizoram</option>
+                            <option value="Nagaland">Nagaland</option>
+                            <option value="Odisha">Odisha</option>
+                            <option value="Punjab">Punjab</option>
+                            <option value="Rajasthan">Rajasthan</option>
+                            <option value="Sikkim">Sikkim</option>
+                            <option value="Tamil Nadu">Tamil Nadu</option>
+                            <option value="Telangana">Telangana</option>
+                            <option value="Tripura">Tripura</option>
+                            <option value="Uttar Pradesh">Uttar Pradesh</option>
+                            <option value="Uttarakhand">Uttarakhand</option>
+                            <option value="West Bengal">West Bengal</option>
+                            <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+                            <option value="Chandigarh">Chandigarh</option>
+                            <option value="Dadra and Nagar Haveli and Daman and Diu">Dadra and Nagar Haveli and
+                                Daman and
+                                Diu</option>
+                            <option value="Lakshadweep">Lakshadweep</option>
+                            <option value="Delhi">Delhi</option>
+                            <option value="Puducherry">Puducherry</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Phone No </td>
+                    <td>: <input type="text" name="txtPhone" size="10" placeholder="Enter Phone Number"></td>
+                    <td nowrap>e-mail ID </td>
+                    <td nowrap>: 
+						<input type="email" name="txtEmail" placeholder="Enter Email"></td>
+                </tr>
+                <tr>
+                    <td>GST No </td>
+                    <td>: <input type="text" name="txtGST" size="10" placeholder="GST No."></td>
+                    <td>Date </td>
+                    <td>: <input type="date" name="txtDate"></td>
+                </tr>
+                <tr>
+                    <td>Password </td>
+                    <td>: <input type="password" name="txtPswd" placeholder="Enter Password"></td>
+                    <td>Photo </td>
+                    <td>: <input type="file" name="filePhoto" onchange="showImage()"></td>
+                </tr>
+            </table>
+            <br>
+            <input type="submit" name="btnSubmit" value="Submit" > &nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="submit" name="btnFind" value="Find" formaction="OSS_RetailerFC.jsp"> &nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="reset" name="btnReset" value="Reset">
+        </form>
+    </center>
+	</body>
+</html>

@@ -1,0 +1,176 @@
+body 
+{
+	background: linear-gradient(to right, #a7fa2b, #2eff17);
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    text-align: center;
+}
+<linearGradient
+		id="paint0_linear_2163_47664"
+		x1="-.894"
+		x2="26.442"
+		y1="-.85"
+		y2="33.433"
+		gradientUnits="userSpaceOnUse"
+	>
+nav 
+{
+    background-color: #a1f74a;
+    border-radius: 20px;
+    color: rgb(0, 0, 0);
+    box-shadow: 0 0 19px rgba(255, 253, 253, 0.1);
+    width: 100%;
+}
+
+
+form 
+{
+    background-color:rgb(236, 177, 236);
+    padding-left: 250px;
+    padding-right: 250px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    height: fit-content;
+    border-radius: 15px;
+    box-shadow: 0 0 90px rgb(183, 236, 201);
+    opacity: 1;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+select 
+{
+    margin-bottom: 10px;
+    border-radius: 7px;
+    box-shadow: 0 0 15px rgb(190, 225, 142);
+    font-size: 12px;
+    padding: 7px;
+    width: 85%;
+    border: none;
+    outline: none;
+   
+}
+
+option 
+{
+    cursor: pointer;
+    margin-bottom: 10px;
+    border-radius: 7px;
+    box-shadow: 0 0 15px rgba(123, 207, 166, 0.483);
+    font-size: 12px;
+    padding: 7px;
+    width: 80%;
+    border: none;
+    outline: none;
+}
+
+select 
+{
+    width: 90%;
+}
+
+input[type="email"] 
+{
+    width: 100%;
+}
+
+input[type="text"]:hover,
+input[type="email"]:hover,
+input[type="date"]:hover,
+textarea:hover,
+select:hover 
+{
+    background-color: #ade0e0;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    padding: 5px;
+}
+
+input[type="submit"]
+{
+    color: rgb(255, 255, 255);
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    width: 120px;
+    height: 40px;
+}
+input[type="reset"] 
+{
+    color: rgb(255, 255, 255);
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    width: 120px;
+    height: 40px;
+}
+
+input[type="button"] 
+{
+    color: rgb(255, 255, 255);
+    background-color: greenyellow;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    width: 120px;
+    height: 40px;
+}
+input[type="button"]:hover 
+{
+    background: linear-gradient(to right, #af3fff, #ff1e92);
+}
+
+input[type="button"]
+{
+    background: linear-gradient(to right, #a7fa2b, #2eff17);
+}
+
+input[type="submit"]:hover 
+{
+    background: linear-gradient(to right, #e958ff, #fc3314);
+}
+
+input[type="submit"] 
+{
+    background: linear-gradient(to left,#1900ff, #3300ff);
+}
+
+
+input[type="reset"]:hover 
+{
+    background: linear-gradient(to right, #32cd47, #d571fd);
+    color: black;
+}
+
+input[type="reset"]
+{
+    background: linear-gradient(to right, #e0368e, #6ff432);
+}
+input[type="update"]:hover 
+{
+    background: linear-gradient(to right, #eb17c1, #93ec1e);
+    color: black;
+}
+
+input[type="update"]
+{
+    background: linear-gradient(to right, #14ff2f, #2b8b32);
+}
+
+
+input[type="text"]::placeholder,
+input[type="email"]::placeholder,
+textarea::placeholder 
+{
+    color: #a2a3aa;
+}

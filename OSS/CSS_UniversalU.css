@@ -1,0 +1,173 @@
+body {
+    background-color: rgb(230, 209, 230);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    text-align: center;
+}
+
+
+nav {
+    background-color: #c4e8e9;
+    padding: 0%;
+    border-radius: 15px;
+    color: rgb(78, 62, 182);
+    box-shadow: 0 0 19px rgba(0, 0, 0, 0.1);
+    width: 120%;
+}
+
+form {
+    background-color: rgb(226, 230, 235);
+    padding-left: 250px;
+    padding-right: 250px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    height: fit-content;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    opacity: 1;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+select {
+    margin-bottom: 10px;
+    border-radius: 7px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    font-size: 12px;
+    padding: 7px;
+    width: 85%;
+    border: none;
+    outline: none;
+}
+
+option {
+    cursor: pointer;
+    margin-bottom: 10px;
+    border-radius: 7px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    font-size: 12px;
+    padding: 7px;
+    width: 80%;
+    border: none;
+    outline: none;
+}
+
+input[type="file"]:hover {
+    background: #f8f8f8;
+}
+
+select {
+    width: 90%;
+}
+
+input[type="email"] {
+    width: 100%;
+}
+
+
+input[name="txtVcode"],
+input[name="txtCatgcode"],
+input[name="txtSPrice"],
+input[name="txtStock"] {
+    width: 30px; 
+}
+
+input[type="text"]:hover,
+input[type="email"]:hover,
+input[type="date"]:hover,
+textarea:hover,
+select:hover {
+    background-color: #c4e4e4;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    padding: 5px;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    color: aliceblue;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    width: 120px;
+    height: 40px;
+}
+
+input[type="button"] {
+    color: aliceblue;
+    background-color: greenyellow;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    width: 120px;
+    height: 40px;
+}
+
+input[name="txtVcode"],
+input[name="txtCatgcode"],
+input[name="txtSPrice"],
+input[name="txtStock"] {
+    width: 50%;
+}
+
+input[type="submit"]:hover {
+    background: linear-gradient(to right, #692c72, #5c8fbe);
+}
+
+input[type="submit"]:not(:hover) {
+    background: linear-gradient(to right, #3e4bb9, #4e569b);
+}
+
+input[type="button"]:hover {
+    background: linear-gradient(to right, #a89a4a, #f1ce03);
+}
+
+input[type="button"]:not(:hover) {
+    background: linear-gradient(to right, #a89a4a, #f1ce03);
+}
+
+input[type="reset"]:hover {
+    background: linear-gradient(to right, #c7b8c4, #a2a3aa);
+    color: black;
+}
+
+input[type="reset"]:not(:hover) {
+    background: linear-gradient(to right, #bd0404, #e72f2f);
+}
+
+
+
+input[type="text"]::placeholder,
+input[type="email"]::placeholder,
+textarea::placeholder {
+    color: #a2a3aa;
+}
+
+<style>
+        #deletebtn{
+            background: linear-gradient(to right, #d11414, #e65e5e);
+        }
+        #deletebtn:hover {
+            background: linear-gradient(to right,#e65e5e, #d11414);
+        }
+        #updatebtn{
+            background: linear-gradient(to right, #2f9c03, #90eb5c);
+        }
+        #upatebtn:hover{
+            background: linear-gradient(to right, #90eb5c, #2f9c03);
+        }
+
+        input[name="txtVcode"],
+        input[name="txtICode"],
+        input[name="txtSPrice"],
+        input[name="txtStock"] {
+            width: 50%; 
+        }
+    </style>

@@ -1,0 +1,72 @@
+<html>
+	<head>
+		<title> User Login Page </title>
+		<link rel="stylesheet" href="CSS_Universal.css">
+
+		<script language="javascript">
+			
+			function goUser()
+			{
+				window.location="OSS_Menu.html";
+			}
+			function goForget()
+			{
+				window.location="OSS_ForgetPwdC.html";
+			}
+			function goCreate()
+			{
+				window.location="OSS_UserCreate.html";
+			}
+			function Activate()
+			{
+				document.getElementById("idLogin").disabled=false;
+			}
+		</script>
+	</head>
+	<body bgcolor="grey">
+	<tr>
+		<form name="f1" action="OSS_Login.jsp" method="post">
+			<br><br><br><br><br><br><br><br><br><br><br><br>
+			<p align="center">
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<font face="Copperplate Gothic" color="Black" size="6">User Authentication</font>
+			</p>
+			<table width="700" align="center">
+				<tr>
+					<td><img src="1.jpg" height="400" width="700" style="cursor:pointer" usemap="#click">
+						<map name="click">
+							<area shape="rect" coords="50 50 200 270" onclick="Activate()"  target="_self">
+						</map	
+					</td>
+					<table width="300" align="center">
+						<tr>
+							<td><font color="black" size="4"> User Name</td>
+							<td>: <input type="text" id="idUser" name="txtUName" size="12" required autocomplete="off"><font color="red">*</td>
+						</tr>
+						<tr></tr>
+						<tr></tr>
+						<tr>
+							<td><font color="black" size="4">Password</td>
+							<td>: <input type="password" id="idPass" name="txtPswd" size="12" required autocomplete="off"><font color="red">*</td>
+						</tr>
+					</table><br><br>
+					<center>
+						<input type="submit" name="btnLogin" value="Login" id="idLogin" formaction="OSS_Menu.html">
+						<input type="reset" name="btnReset" value="Reset">
+						<input type="button" name="btnForget" value="Forget Password" onClick="goForget()">
+						<input type="button" name="btnCreate" value="Sign Up" onClick="goCreate()">
+					</center>
+				</tr>
+				<tr></tr>
+				<tr></tr>
+				<tr></tr>
+				<td></td>
+				<table width="100%" height="20">
+					<td></td>
+					<tr bgcolor="white">
+						<td><font color="black" size="5" >Designed & Developed By :<marquee behavior="alternate" ></font><font face="Copperplate Gothic"color="green" ><b> Bigyanshu Pragyandipti Swagatika Sidheswari</b></font></marquee></i></font></td>
+					</tr>
+				</table>
+		</form>
+	</body>
+</html>
